@@ -1,3 +1,4 @@
+import { DxDataGridModule, DxTreeListModule } from 'devextreme-angular';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -23,7 +24,9 @@ import { AppRoutingModule } from './app-routing.module';
     ChangePasswordFormModule,
     LoginFormModule,
     UnauthenticatedContentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DxDataGridModule,
+    DxTreeListModule
   ],
   providers: [
     AuthService,
