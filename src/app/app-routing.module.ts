@@ -1,3 +1,4 @@
+import { RolesListComponent } from './pages/roles-list/roles-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginFormComponent, ResetPasswordFormComponent, CreateAccountFormComponent, ChangePasswordFormComponent } from './shared/components';
@@ -8,6 +9,10 @@ import { TasksComponent } from './pages/tasks/tasks.component';
 import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
 
 const routes: Routes = [
+  {
+    path: 'roles',
+    component: RolesListComponent,
+  },
   {
     path: 'tasks',
     component: TasksComponent,
